@@ -7,11 +7,11 @@ from chainer import serializers
 import argparse
 
 parser = argparse.ArgumentParser('PCA')
-parser.add_argument('batch_size', type=int)
-parser.add_argument('n_components', type=int)
-parser.add_argument('rootdir', type=str)
-parser.add_argument('max_samples', type=str)
-parser.add_argument('model_dump', type=str)
+parser.add_argument('-batch_size', type=int)
+parser.add_argument('-n_components', type=int)
+parser.add_argument('-rootdir', type=str)
+parser.add_argument('-max_samples', type=str)
+parser.add_argument('-model_dump', type=str)
 args = parser.parse_args()
 
 net = VGG19()

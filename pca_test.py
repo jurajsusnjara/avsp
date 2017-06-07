@@ -7,9 +7,9 @@ import numpy as np
 import argparse
 
 parser = argparse.ArgumentParser('PCA')
-parser.add_argument('input', type=str)
-parser.add_argument('output', type=str)
-parser.add_argument('model_dump', type=str)
+parser.add_argument('-input', type=str)
+parser.add_argument('-output', type=str)
+parser.add_argument('-model_dump', type=str)
 args = parser.parse_args()
 
 
