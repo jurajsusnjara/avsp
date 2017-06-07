@@ -8,6 +8,6 @@ Team working on project:
 - Domagoj Krivošić
 - Luka Novak
 
-Project included analysing paper on "Deep Feature Interpolaton for Image Content Changes" (Upchurch, Gardner, Bala, Pless, Snavely, Weinberger) which is given at https://arxiv.org/pdf/1611.05507.pdf and reproducing results. Implementation given at https://github.com/dsanno/chainer-dfi.
+Project included analysing paper on "Deep Feature Interpolation for Image Content Changes" (Upchurch, Gardner, Bala, Pless, Snavely, Weinberger) which is given at https://arxiv.org/pdf/1611.05507.pdf and reproducing results. Implementation given at https://github.com/dsanno/chainer-dfi.
 
 This repository containes python scripts for making PCA analysis on deep feature space of images.
