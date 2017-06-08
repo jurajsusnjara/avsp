@@ -32,4 +32,7 @@ Loads previously trained PCA model, loads given image, transforms it into deep f
 python pca_test.py -input "input_image.jpg" -output "output_image.jpg" -model_dump "model.pkl"
 ```
 
-Resulting images can be found in results folder. Eg. if the name of the file is: result_100samples_100dim.jpg it means PCA was trained on 100 images and will reduce images to 100 dimensions.
+### Results
+|Original|100 samples, 1 dimension|100 samples, 100 dimensions|3000 samples, 300 dimensions|500 samples, 500 dimensions|
+|:---:|:---:|:---:|:---:|
+|![Trained on 100 samples, reduced to 1 dimension](/results/result_100samples_1dim.jpg)|![Trained on 100 samples, reduced to 100 dimensions](/results/result_100samples_100dim.jpg)|![Trained on 3000 samples, reduced to 300 dimensions](/results/result_300samples_300dim_batch.jpg)|![Trained on 500 samples, reduced to 500 dimensions](/results/result_500samples_500dimensions.jpg)|
