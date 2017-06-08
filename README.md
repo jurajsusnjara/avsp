@@ -33,8 +33,10 @@ python pca_test.py -input "input_image.jpg" -output "output_image.jpg" -model_du
 ```
 
 ### Results
-We trained couple of pca models. Eg. first image represents result of PCA model that reduces input vector to one dimension and was trained on 100 images. Results was produced in a way that image was transformed in deep feature space, then reduced to 1 dimension using trained model, then transformed back using same model, then transformed back in pixel space. Neither of these images has recognizable face as original image but background and shirt look similar. For future work PCA model should be trained to reduce to more then 500 dimensions, that will probably result in better output images.
+We trained couple of pca models. Eg. first image represents result of PCA model that reduces input vector to one dimension and was trained on 100 images. Result was produced in a way that image was transformed in deep feature space, then reduced to 1 dimension using trained model, then transformed back using same model, then transformed back in pixel space. Neither of these images has recognizable face as original image but background and shirt look similar. For future work PCA model should be trained to reduce to more then 500 dimensions, that will probably result in better output images.
 
 |100 samples, 1 dimension|100 samples, 100 dimensions|3000 samples, 300 dimensions|500 samples, 500 dimensions|
 |:---:|:---:|:---:|:---:|
 |![Trained on 100 samples, reduced to 1 dimension](/results/result_100samples_1dim.jpg)|![Trained on 100 samples, reduced to 100 dimensions](/results/result_100samples_100dim.jpg)|![Trained on 3000 samples, reduced to 300 dimensions](/results/result_3000samples_300dim_batch.jpg)|![Trained on 500 samples, reduced to 500 dimensions](/results/result_500samples_500dim.jpg)|
+
+Images transformed to deep feature space contain more than 1000000 dimensions which is too much information. Approximately 50% of dimensions has 0 values. Those vectors can be reduced to much lower dimensions.
